@@ -1,0 +1,39 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid {
+//    getting rid of bootstrap padding on container 
+//    so that class is full-width of screen 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.section {
+    width: 100%;
+}
+
+#section1 {
+    height: 100vh;
+    background-image: url("../images/phototime_01.jpg");
+    background-size: cover;
+}
+
+#section2 {
+    height: 70vh;
+    background-image: url("../images/phototime_02.jpg");
+    background-size: cover;
+}
+
+#section3 {
+    height: 70vh;
+    background-image: url("../images/phototime_03.jpg");
+    background-size: cover;
+}
+
+#section5 {
+    height: 100vh;
+    background-image: url("../images/phototime_06.png");
+    background-size: cover;
+}
