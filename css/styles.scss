@@ -46,8 +46,19 @@ html, body {
     color: #fff;
     font-family: 'Gotham Rounded', sans-serif;
     text-align: center;
+    text-shadow: 2px 1px 7px black;
+}
+
+#headerIcon {
+    text-align: center;
 }
 
 #test {
     
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    margin-top: 25px;
 }
