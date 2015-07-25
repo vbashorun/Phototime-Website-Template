@@ -12,21 +12,30 @@ html, body {
 #section1 {
   height: 100vh;
   background-image: url("../images/phototime_01.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #section2 {
   height: 70vh;
   background-image: url("../images/phototime_02.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: right center; }
 
 #section3 {
   height: 70vh;
   background-image: url("../images/phototime_03.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: left center; }
 
 #section5 {
   height: 100vh;
   background-image: url("../images/phototime_06.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
+
+.navigation-link {
+  color: #fff;
+  font-family: 'Gotham Rounded', sans-serif;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
