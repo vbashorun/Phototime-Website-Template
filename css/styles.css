@@ -36,12 +36,7 @@ html, body {
   background-position: center center; }
 
 .navigation-link {
-  color: #fff;
-  font-family: 'Gotham Rounded', sans-serif;
-  text-align: center;
-  text-shadow: 2px 1px 7px black; }
-  .navigation-link h6 {
-    font-size: 1.5rem; }
+  display: none; }
 
 #headerIcon {
   text-align: center; }
@@ -86,4 +81,21 @@ header {
   font-size: 1.0rem;
   letter-spacing: 2px; }
 
-/*# sourceMappingURL=styles.css.map */
+#menuButton {
+  background-color: rgba(0, 0, 0, 0.2); }
+  #menuButton img {
+    width: 20px; }
+
+/********************************** Media Queries ********************************/
+@media screen and (min-width: 768px) {
+  .navigation-link {
+    display: inherit;
+    color: #fff;
+    font-family: 'Gotham Rounded', sans-serif;
+    text-align: center;
+    text-shadow: 2px 1px 7px black; }
+    .navigation-link h6 {
+      font-size: 1.5rem; }
+
+  #menuButton {
+    display: none; } }
