@@ -110,11 +110,18 @@
                     
                     if(showMenu)
                     {
+                        // apply animation
+                        $("#mobileMenu").css("animation", "slideAnimationIn 1s ease 1");
+                        // despite the styles in the keyframe, I still need to duplicate them here for persistence
                         $("#mobileMenu").css("transform", "translateX(0px)");
                     }
                     else
                     {
+                        $("#mobileMenu").css("animation", "slideAnimationOut 1s ease 1");
                         $("#mobileMenu").css("transform", "translateX(-400px)");
+                        // remove animation
+                        setTimeout(function(){$("#mobileMenu").css("animation", "none"); }, 990)
+                        
                     }
 
                     showMenu = !showMenu;

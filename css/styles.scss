@@ -156,3 +156,21 @@ header {
         display: none;
     }
 }
+
+/********************************** Animations ********************************/
+
+#mobileMenu {
+    //animation: slideAnimationIn 1s ease infinite;
+    //animation: none;
+}
+
+@keyframes slideAnimationIn {
+    0% { transform: translateX(-400px);}
+    100% {transform: translateX(0px);}
+}
+
+@keyframes slideAnimationOut {
+    0% { transform: translateX(0px);}
+    100% {transform: translateX(-400px);}
+}
+

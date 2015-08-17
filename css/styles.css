@@ -117,3 +117,14 @@ header {
 
   #menuButton, #mobileMenu {
     display: none; } }
+/********************************** Animations ********************************/
+@keyframes slideAnimationIn {
+  0% {
+    transform: translateX(-400px); }
+  100% {
+    transform: translateX(0px); } }
+@keyframes slideAnimationOut {
+  0% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(-400px); } }
