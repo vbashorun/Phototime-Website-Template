@@ -101,8 +101,26 @@
             </footer>
         </div>
         
-        
-        
-        
+        <script>
+            
+            $(document).ready(function(){
+                var showMenu = true;
+                
+                $("#menuButton").click(function(){
+                    
+                    if(showMenu)
+                    {
+                        $("#mobileMenu").css("transform", "translateX(0px)");
+                    }
+                    else
+                    {
+                        $("#mobileMenu").css("transform", "translateX(-400px)");
+                    }
+
+                    showMenu = !showMenu;
+                    
+                });
+            });
+        </script>
     </body>
 </html>
