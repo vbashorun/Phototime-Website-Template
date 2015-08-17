@@ -133,6 +133,31 @@ header {
     }
 }
 
+#mobileMenu {
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    z-index: 2;
+    background-color: #303030;
+    box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.47) inset;
+    transform: translateX(-400px);
+    
+    h3 {
+        color: white;
+        text-align: center;
+    }
+    
+    ul {
+        padding: 0px;
+    }
+    
+    li {
+        border-top: 0.1px solid black;
+        padding: 5px;
+        list-style: none;
+    }
+}
+
 /********************************** Media Queries ********************************/
 
 @media screen and (min-width: 768px) {
@@ -148,7 +173,25 @@ header {
         }
     }
     
-    #menuButton {
+    #menuButton, #mobileMenu {
         display: none;
     }
 }
+
+/********************************** Animations ********************************/
+
+#mobileMenu {
+    //animation: slideAnimationIn 1s ease infinite;
+    //animation: none;
+}
+
+@keyframes slideAnimationIn {
+    0% { transform: translateX(-400px);}
+    100% {transform: translateX(0px);}
+}
+
+@keyframes slideAnimationOut {
+    0% { transform: translateX(0px);}
+    100% {transform: translateX(-400px);}
+}
+
