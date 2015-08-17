@@ -2,6 +2,15 @@ html, body {
   width: 100%;
   height: 100%; }
 
+@font-face {
+  font-family: 'Gotham Rounded Book';
+  src: local("Gotham Rounded Book"), url("../fonts/Gotham-Rounded-Book.ttf"); }
+@font-face {
+  font-family: 'Gotham Rounded Bold';
+  src: local("Gotham Rounded Bold"), url("../fonts/Gotham-Rounded-Bold.ttf"); }
+@font-face {
+  font-family: 'Gotham Rounded Medium';
+  src: local("Gotham Rounded Medium"), url("../fonts/Gotham-Rounded-Medium.ttf"); }
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px; }
