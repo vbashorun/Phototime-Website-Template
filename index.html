@@ -112,19 +112,11 @@
                 $("#menuButton").click(function(){
                     
                     if(showMenu)
-                    {
-                        // apply animation
-                        $("#mobileMenu").css("animation", "slideAnimationIn 0.5s ease 1");
-                        // despite the styles in the keyframe, I still need to duplicate them here for persistence
                         $("#mobileMenu").css("transform", "translateX(0px)");
-                    }
+                    
                     else
-                    {
-                        $("#mobileMenu").css("animation", "slideAnimationOut 0.5s ease 1");
                         $("#mobileMenu").css("transform", "translateX(-400px)");
-                        
-                    }
-
+                    
                     showMenu = !showMenu;
                     
                 });

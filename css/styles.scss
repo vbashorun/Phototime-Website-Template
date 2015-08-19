@@ -109,6 +109,13 @@ header {
     bottom: 5%;
 }
 
+#footerImageContainer {
+    div {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
 .greenButton {
         width: 40%;
         margin-left: auto;
@@ -137,6 +144,7 @@ header {
     background-color: #303030;
     box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.47) inset;
     transform: translateX(-400px);
+    transition: transform 0.5s ease;
     
     h3 {
         color: white;
