@@ -162,12 +162,25 @@ header {
     }
 }
 
+#footerImageContainer {
+    text-align: center;
+
+    img {
+        display: inline-block;
+    }
+    
+    :nth-child(2) {
+        margin: 0px 4%;
+    }
+}
+
 #mobileMenuHeader {
     text-align: center;
 }
 
 /********************************** Media Queries ********************************/
 
+// min width: 768px
 @media screen and (min-width: 768px) {
     .navigation-link {
         display: inherit;
@@ -195,8 +208,11 @@ header {
             font-size: 3rem;
         }
     }
+    
+    
 }
 
+// max width: 430px (to fix green button issues on smaller screens. Doesn't fix them all)
 @media screen and (max-width: 430px) {
     
     .greenButton {
