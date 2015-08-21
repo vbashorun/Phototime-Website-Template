@@ -1,7 +1,6 @@
-html, body {
-    width: 100%;
-    height: 100%;
-}
+$theme-green: #16a085;
+$light-gray: #f5f6f7;
+$off-black: #6a6a6a;
 
 @font-face {
     font-family: 'Gotham Rounded Book';
@@ -22,7 +21,13 @@ html, body {
     src: 
         local('Gotham Rounded Medium'),
         url('../fonts/Gotham-Rounded-Medium.ttf');
-}        
+}    
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Gotham Rounded Medium', sans-serif;
+}
 
 .container-fluid {
     //    getting rid of bootstrap padding on container 
@@ -33,17 +38,15 @@ html, body {
 
 .section {
     width: 100%;
+    overflow: auto; //margin collapse fix
+    position: relative;
 }
 
 #section1 {
     height: 100vh;
     background-image: url("../images/phototime_01.jpg");
     background-size: cover;
-    background-position: center center;
-    position: relative;
-    
-    //margin collapse fix
-    overflow: auto;
+    background-position: center bottom;
 }
 
 #section2 {
@@ -51,6 +54,33 @@ html, body {
     background-image: url("../images/phototime_02.jpg");
     background-size: cover;
     background-position: right center;
+    
+    div:first-child {
+        width: 70%;
+        height: 60%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+
+    h4 {
+        font-family: "Gotham Rounded Bold";
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        color: $theme-green;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-family: 'Gotham Rounded Book';
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        color: $off-black;
+        margin-bottom: 40px;
+    }
 }
 
 #section3 {
@@ -58,6 +88,11 @@ html, body {
     background-image: url("../images/phototime_03.jpg");
     background-size: cover;
     background-position: left center;
+}
+
+#section4 {
+    height: 70vh;
+    background-color: $light-gray;
 }
 
 #section5 {
@@ -75,7 +110,7 @@ header {
     position: fixed;
     width: 100%;
     margin-top: 25px;
-    z-index: 1;
+    z-index: 100;
 }
 
 #tagline {
@@ -87,7 +122,6 @@ header {
     
     margin: 0px auto;
     color: white;
-    font-family: "Gotham Rounded Medium", sans-serif;
     
     h3 {
         font-size: 2.5rem;
@@ -110,16 +144,19 @@ header {
 }
 
 .greenButton {
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-        height: 40px;
-        padding: 15px 0px;
-        background-color: #16a085;
-        border-radius: 4px;
-        font-size: 1.0rem;
-        letter-spacing: 2px;
-    }
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    padding: 15px 0px;
+    background-color: $theme-green;
+    border-radius: 4px;
+    font-size: 1.0rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+
+}
 
 #menuButton {
     background-color: rgba(0,0,0,0.2);
@@ -171,6 +208,16 @@ header {
     text-align: center;
 }
 
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
 /********************************** Media Queries ********************************/
 
 // min width: 768px
@@ -178,7 +225,6 @@ header {
     .navigation-link {
         display: inherit;
         color: #fff;
-        font-family: "Gotham Rounded Medium", sans-serif;
         text-align: center;
         text-shadow: 2px 1px 7px black;
 
@@ -202,7 +248,25 @@ header {
         }
     }
     
+    #section2 {
+        
+        div:first-child {
+            width: 40%;
+            margin-left: 10%;
+            
+            top: 50%;
+            left: 0%;
+            transform: translateY(-50%);
+        }
+        
+        .greenButton {
+            float:left;
+        }
+    }
     
+    .overlay {
+        display: none;
+    }
 }
 
 // max width: 430px (to fix green button issues on smaller screens. Doesn't fix them all)
