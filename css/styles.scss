@@ -72,13 +72,14 @@ html, body {
         letter-spacing: 2px;
         color: $theme-green;
         margin-bottom: 40px;
+        text-shadow: 2px 1px 2px rgb(75, 75, 75);
     }
 
     p {
         font-family: 'Gotham Rounded Book';
         font-size: 1.1rem;
         letter-spacing: 0.5px;
-        color: $off-black;
+        color: white;
         margin-bottom: 40px;
     }
 }
@@ -88,6 +89,35 @@ html, body {
     background-image: url("../images/phototime_03.jpg");
     background-size: cover;
     background-position: left center;
+    
+    div:first-child {
+        width: 70%;
+        height: 60%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        
+    }
+
+    h4 {
+        font-family: "Gotham Rounded Bold";
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        color: $theme-green;
+        margin-bottom: 40px;
+        text-shadow: 2px 1px 2px rgb(75, 75, 75);
+    }
+
+    p {
+        font-family: 'Gotham Rounded Book';
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        color: white;
+        margin-bottom: 40px;
+    }
 }
 
 #section4 {
@@ -170,7 +200,7 @@ header {
     position: fixed;
     height: 100vh;
     width: 50%;
-    z-index: 2;
+    z-index: 99;
     background-color: #303030;
     box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.47) inset;
     transform: translateX(-400px);
@@ -211,7 +241,7 @@ header {
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(2, 2, 2, 0.7);
     z-index: 1;
     position: absolute;
     top: 0%;
@@ -253,14 +283,41 @@ header {
         div:first-child {
             width: 40%;
             margin-left: 10%;
-            
-            top: 50%;
             left: 0%;
             transform: translateY(-50%);
         }
         
+        h4 {
+            text-shadow: none;
+        }
+        
+        p {
+            color: $off-black;
+        }
+        
         .greenButton {
             float:left;
+        }
+    }
+    
+    #section3 {
+        
+        div:first-child {
+            width: 40%;
+            margin-right: 10%;
+            transform: translateY(-50%);
+        }
+        
+        h4 {
+            text-shadow: none;
+        }
+        
+        p {
+            color: $off-black;
+        }
+        
+        .greenButton {
+            float: left;
         }
     }
     
