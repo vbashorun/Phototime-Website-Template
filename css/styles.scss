@@ -130,10 +130,6 @@ html, body {
 
 #section4Row {
     padding: 0px 10%;
-    position: relative;
-    height: 0%;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .section-4-image img {
@@ -141,27 +137,22 @@ html, body {
 }
 
 .section-4-block {
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 #section4Block1 {
     text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    
+
     div {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     h4 {
         font-size: 1.4rem;
         letter-spacing: 1.7px;
-        margin: 8% 0px;
     }
-    
+
     p {
         font-family: "Gotham Rounded Book";
         font-size: 0.9rem;
@@ -300,6 +291,11 @@ header {
 
 // min width: 768px
 @media screen and (min-width: 768px) {
+    
+    .overlay {
+        display: none;
+    }
+    
     .navigation-link {
         display: inherit;
         color: #fff;
@@ -371,9 +367,29 @@ header {
         }
     }
     
-    .overlay {
-        display: none;
+    #section4Row {
+        position: relative;
+        height: 0%;
+        top: 50%;
+        transform: translateY(-50%);
     }
+
+    .section-4-image img {
+    }
+
+    .section-4-block {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #section4Block1 {
+        top: 50%;
+        transform: translateY(-50%);
+
+        h4 {
+            margin: 8% 0px;
+        }
+    }    
 }
 
 // max width: 430px (to fix green button issues on smaller screens. Doesn't fix them all)
