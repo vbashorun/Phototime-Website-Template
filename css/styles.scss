@@ -130,6 +130,9 @@ html, body {
 
 #section4Row {
     padding: 0px 10%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .section-4-image img {
@@ -141,6 +144,7 @@ html, body {
 
 #section4Block1 {
     text-align: center;
+    margin-bottom: 35px;
 
     div {
         width: 80%;
@@ -368,10 +372,7 @@ header {
     }
     
     #section4Row {
-        position: relative;
         height: 0%;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
     .section-4-image img {
@@ -385,6 +386,7 @@ header {
     #section4Block1 {
         top: 50%;
         transform: translateY(-50%);
+        margin: 0px;
 
         h4 {
             margin: 8% 0px;
