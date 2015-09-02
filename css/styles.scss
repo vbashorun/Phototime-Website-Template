@@ -124,12 +124,14 @@ html, body {
 
 #section4 {
     height: 70vh;
-    background-color: $light-gray;    
+    background-color: $light-gray;
+    overflow: hidden;
 }
 
 #section4Row {
     padding: 0px 10%;
-    position: absolute;
+    position: relative;
+    height: 0%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -138,8 +140,15 @@ html, body {
     width: 100%;
 }
 
+.section-4-block {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 #section4Block1 {
     text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
     
     div {
         width: 80%;
@@ -147,10 +156,16 @@ html, body {
         margin-right: auto;
     }
     
+    h4 {
+        font-size: 1.4rem;
+        letter-spacing: 1.7px;
+        margin: 8% 0px;
+    }
+    
     p {
         font-family: "Gotham Rounded Book";
         font-size: 0.9rem;
-        width: 40%;
+        width: 100px;
         margin-left: auto;
         margin-right: auto;
     }
