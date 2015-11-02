@@ -27,6 +27,11 @@ html, body {
   background-size: cover;
   background-position: center bottom; }
 
+#section1Footer {
+  position: absolute;
+  width: 100%;
+  bottom: 5%; }
+
 #section2 {
   height: 70vh;
   background-image: url("../images/phototime_02.jpg");
@@ -120,6 +125,41 @@ html, body {
   background-size: cover;
   background-position: center center; }
 
+#section5Block {
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30%;
+  margin-top: 5%; }
+
+#inputContainer {
+  height: 10%;
+  width: 20%; }
+
+.input-container input[type="text"] {
+  width: 75%;
+  height: 100%;
+  padding: 0px;
+  float: left;
+  font-family: 'Gotham Rounded Medium';
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000;
+  border: 0px;
+  border-radius: 3px 0 0 3px; }
+
+.input-container input[type="image"] {
+  width: 25%;
+  height: 100%;
+  padding: 20px 25px;
+  background-color: #16a085;
+  border-radius: 0px 3px 3px 0px;
+  cursor: pointer; }
+
 .navigation-link, #headerIcon {
   display: none; }
 
@@ -145,11 +185,6 @@ header {
   #tagline h5 {
     font-size: 1.1rem;
     letter-spacing: 2px; }
-
-#section1Footer {
-  position: absolute;
-  width: 100%;
-  bottom: 5%; }
 
 .greenButton {
   width: 40%;
