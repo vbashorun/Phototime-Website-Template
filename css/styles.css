@@ -134,15 +134,23 @@ html, body {
   transform: translateY(-50%);
   height: 30%;
   margin-top: 5%; }
+  #section5Block h4 {
+    width: 600px;
+    letter-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff; }
 
 #inputContainer {
-  height: 10%;
-  width: 20%; }
+  height: 50px;
+  width: 300px;
+  margin: 0px auto; }
 
 .input-container input[type="text"] {
-  width: 75%;
+  width: 80%;
   height: 100%;
   padding: 0px;
+  padding-left: 15px;
   float: left;
   font-family: 'Gotham Rounded Medium';
   font-size: 1.5rem;
@@ -153,9 +161,9 @@ html, body {
   border-radius: 3px 0 0 3px; }
 
 .input-container input[type="image"] {
-  width: 25%;
+  width: 20%;
   height: 100%;
-  padding: 20px 25px;
+  padding: 6% 7%;
   background-color: #16a085;
   border-radius: 0px 3px 3px 0px;
   cursor: pointer; }
