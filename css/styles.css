@@ -159,10 +159,15 @@ html, body {
     letter-spacing: 2px;
     color: #6a6a6a; }
 
-#inputContainer {
+/*#inputContainer {
+    height: 50px;
+    width: 300px;
+    margin: 0px auto;
+}*/
+.input-container {
   height: 50px;
   width: 300px;
-  margin: 0px auto; }
+  margin: 0px auto 15px auto; }
 
 .input-container input[type="text"] {
   width: 80%;
@@ -178,6 +183,42 @@ html, body {
   border: 0px;
   border-radius: 3px 0 0 3px; }
 
+.input-container label {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Gotham Rounded Medium';
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff; }
+
+.label-div {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  padding: 0px;
+  padding-left: 15px;
+  float: left;
+  background-color: #1abc9c;
+  border-radius: 3px 0 0 3px; }
+
+#imageDivButtonLeft {
+  background-image: url("../images/apple_logo.png"); }
+
+#imageDivButtonRight {
+  background-image: url("../images/android_logo.png"); }
+
+.image-div-button {
+  width: 20%;
+  height: 100%;
+  background-color: #16A085;
+  border-radius: 0px 3px 3px 0px;
+  cursor: pointer;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
 .input-container input[type="image"] {
   width: 20%;
   height: 100%;
@@ -185,6 +226,9 @@ html, body {
   background-color: #16a085;
   border-radius: 0px 3px 3px 0px;
   cursor: pointer; }
+
+#section6 .input-container {
+  width: 100%; }
 
 .navigation-link, #headerIcon {
   display: none; }
