@@ -159,11 +159,6 @@ html, body {
     letter-spacing: 2px;
     color: #6a6a6a; }
 
-/*#inputContainer {
-    height: 50px;
-    width: 300px;
-    margin: 0px auto;
-}*/
 .input-container {
   height: 50px;
   width: 300px;
@@ -315,7 +310,6 @@ header {
   top: 0%;
   left: 0%; }
 
-/********************************** section 6 ********************************/
 /********************************** Media Queries ********************************/
 @media screen and (min-width: 768px) {
   .overlay {
