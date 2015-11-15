@@ -212,7 +212,7 @@ html, body {
     }
     
     p {
-        width: 70%;
+        width: 65%;
         margin-right: auto;
         margin-left: auto;
         
@@ -425,6 +425,33 @@ header {
     left: 0%;
 }
 
+
+
+.green-bar {
+    color: $theme-green;
+}
+
+footer {
+    height: 15vh;
+    padding: 0px 8%;
+
+    div {
+        float: left;
+
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        h6 {
+            letter-spacing: 1.5px;
+        }
+    }
+
+    img {
+        display: none;
+    }
+}
+
 /********************************** Media Queries ********************************/
 
 // min width: 768px
@@ -525,12 +552,27 @@ header {
         h4 {
             margin: 8% 0px;
         }
-    }    
+    }
+    
+    
+    footer {
+        img {
+            display: block;
+            float: right;
+            width: 40px;
+
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    
 }
 
-// max width: 430px (to fix green button issues on smaller screens. Doesn't fix them all)
+
 @media screen and (max-width: 430px) {
     
+    // max width: 430px (to fix green button issues on smaller screens. Doesn't fix them all)
     .greenButton {
         font-size: 0.75rem;
     }

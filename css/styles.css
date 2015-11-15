@@ -150,7 +150,7 @@ html, body {
     text-transform: uppercase;
     margin-top: 8%; }
   #section6 p {
-    width: 70%;
+    width: 65%;
     margin-right: auto;
     margin-left: auto;
     font-family: "Gotham Rounded Medium";
@@ -310,6 +310,22 @@ header {
   top: 0%;
   left: 0%; }
 
+.green-bar {
+  color: #16a085; }
+
+footer {
+  height: 15vh;
+  padding: 0px 8%; }
+  footer div {
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    footer div h6 {
+      letter-spacing: 1.5px; }
+  footer img {
+    display: none; }
+
 /********************************** Media Queries ********************************/
 @media screen and (min-width: 768px) {
   .overlay {
@@ -370,7 +386,15 @@ header {
     transform: translateY(-50%);
     margin: 0px; }
     #section4Block1 h4 {
-      margin: 8% 0px; } }
+      margin: 8% 0px; }
+
+  footer img {
+    display: block;
+    float: right;
+    width: 40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); } }
 @media screen and (max-width: 430px) {
   .greenButton {
     font-size: 0.75rem; } }
