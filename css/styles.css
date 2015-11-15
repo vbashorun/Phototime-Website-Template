@@ -148,7 +148,7 @@ html, body {
     font-size: 1.7rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 5%; }
+    margin-top: 8%; }
   #section6 p {
     width: 70%;
     margin-right: auto;
@@ -185,7 +185,7 @@ html, body {
 
 .input-container label {
   position: relative;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   font-family: 'Gotham Rounded Medium';
   font-size: 1rem;
@@ -255,6 +255,9 @@ header {
   #tagline h5 {
     font-size: 1.1rem;
     letter-spacing: 2px; }
+
+#storeButtonRow {
+  margin-top: 3%; }
 
 .greenButton {
   width: 40%;
