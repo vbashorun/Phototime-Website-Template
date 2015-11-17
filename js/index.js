@@ -60,7 +60,7 @@ $(document).ready(function(){
     });
 
     $(".label-div").mouseleave(function(){
-        $(this).css("background-color", "#16a085");
+        $(this).css("background-color", "#1abc9c");
         $(this).find("label").css("color", "#fff");                    
     });
 });
