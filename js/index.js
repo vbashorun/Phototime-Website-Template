@@ -12,7 +12,7 @@ $(document).ready(function(){
 
         showMenu = !showMenu;
     });
-
+    
     // social media logo animatins
     $(".mini-logo").hover(function(){
         $(this).addClass("animated shake");
@@ -62,5 +62,23 @@ $(document).ready(function(){
     $(".label-div").mouseleave(function(){
         $(this).css("background-color", "#1abc9c");
         $(this).find("label").css("color", "#fff");                    
+    });
+    
+    // input check button
+    
+    $("#inputContainer input[type=\"image\"]").mouseenter(function(){
+        $(this).addClass("animated rubberBand");
+    });
+
+    $("#inputContainer input[type=\"image\"]").mouseleave(function(){
+        $(this).removeClass("animated rubberBand");
+    });
+    
+    $("#inputContainer input[type=\"image\"]").mousedown(function(){
+        $(this).css("background-color", "#5C5C5C");
+    });
+    
+    $("#inputContainer input[type=\"image\"]").mouseup(function(){
+        $(this).css("background-color", "#16a085");
     });
 });
