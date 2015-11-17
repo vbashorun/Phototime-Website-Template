@@ -317,6 +317,7 @@ html, body {
 
 .navigation-link, #headerIcon {
     display: none;
+    cursor: pointer;
 }
 
 header {
@@ -487,9 +488,16 @@ footer {
         color: #fff;
         text-align: center;
         text-shadow: 2px 1px 7px black;
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
 
-        h6 {
-            font-size: 1.5rem;
+            &:hover {
+                color: $theme-green;
+                text-decoration: none;
+            }
         }
     }
     
