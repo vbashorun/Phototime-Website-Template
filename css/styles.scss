@@ -615,6 +615,22 @@ footer {
     transition-delay: 0s;
 }
 
+.label-div:hover {
+    background-color: #fff;
+    border-style: solid;
+    border-color: #16A085;
+    border-width: 2px;
+    
+    transition-property: background-color, border-style, border-color, border-width;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    
+    label {
+        color: $theme-green;
+    }
+}
+
 
 @keyframes slideAnimationIn {
     0% { transform: translateX(-400px);}
