@@ -156,6 +156,9 @@
                         OUR TEAMS
                     </h6>
                     <h6>Copyright by phototime - all rights reserved</h6>
+                    <h6>Designed by <a href="http://www.gianlucacosetta.com/" target="_blank">Gianluca Cosetta</a></h6>
+                    <h6>Coded by <a href="http://www.victorbashorun.com" target="_blank">Victor Bashorun</a></h6>
+               
                 </div>
                 <img src="images/camera_green.png" />
             </footer>
@@ -166,6 +169,7 @@
             $(document).ready(function(){
                 var showMenu = true;
                 
+                // mobile menu transitions
                 $("#menuButton").click(function(){
                     
                     if(showMenu)
@@ -176,6 +180,27 @@
                     
                     showMenu = !showMenu;
                     
+                });
+                
+                // green button transitions
+                $(".green-button").mousedown(function(){
+                    $(".green-button").css("background-color", "#5C5C5C");
+                    $(".green-button").css("color", "#fff");
+                });
+                
+                $(".green-button").mouseup(function(){
+                    $(".green-button").css("background-color", "#fff");
+                    $(".green-button").css("color", "#16a085");
+                });
+                
+                $(".green-button").mouseenter(function(){
+                    $(".green-button").css("background-color", "#fff");
+                    $(".green-button").css("color", "#16a085");
+                });
+                
+                $(".green-button").mouseleave(function(){
+                    $(".green-button").css("background-color", "#16a085");
+                    $(".green-button").css("color", "#fff");
                 });
             });
         </script>

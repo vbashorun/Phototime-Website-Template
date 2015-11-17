@@ -5908,7 +5908,8 @@ header {
   font-size: 1.0rem;
   letter-spacing: 2px;
   text-align: center;
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 #menuButton {
   background-color: rgba(0, 0, 0, 0.2); }
