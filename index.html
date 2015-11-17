@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
         <title>Phototime Website Template</title>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -57,9 +58,9 @@
                 </div>
                 <div id="section1Footer" class="">
                     <div id="footerImageContainer" class="col-xs-6 col-xs-offset-3">
-                        <img id="twitterLogo" src="images/twitter.png" />
-                        <img id="flickLogo" src="images/flickr.png" />
-                        <img id="dribbbleLogo" src="images/dribbble.png" />
+                        <img id="twitterLogo" class="mini-logo" src="images/twitter.png" />
+                        <img id="flickLogo" class="mini-logo" src="images/flickr.png" />
+                        <img id="dribbbleLogo" class="mini-logo" src="images/dribbble.png" />
                     </div>
                     
                 </div>
@@ -180,6 +181,15 @@
                     
                     showMenu = !showMenu;
                     
+                });
+                
+                // social media logo animatins
+                $(".mini-logo").hover(function(){
+                    $(this).addClass("animated shake");
+                });
+                
+                $(".mini-logo").mouseleave(function(){
+                    $(this).removeClass("animated shake");
                 });
                 
                 // green button transitions
