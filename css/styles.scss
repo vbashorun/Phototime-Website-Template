@@ -390,6 +390,8 @@ header {
     transform: translateX(-400px);
     transition: transform 0.5s ease;
     
+    a { text-decoration: none};
+    
     h3 {
         color: white;
         text-align: center;
@@ -403,6 +405,16 @@ header {
         border-top: 0.1px solid black;
         padding: 5px;
         list-style: none;
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+            
+            &:hover {
+                color: $theme-green;
+            }
+            
+        }
     }
 }
 

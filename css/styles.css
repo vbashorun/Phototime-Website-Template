@@ -5925,6 +5925,8 @@ header {
   box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.47) inset;
   transform: translateX(-400px);
   transition: transform 0.5s ease; }
+  #mobileMenu a {
+    text-decoration: none; }
   #mobileMenu h3 {
     color: white;
     text-align: center; }
@@ -5934,6 +5936,11 @@ header {
     border-top: 0.1px solid black;
     padding: 5px;
     list-style: none; }
+    #mobileMenu li a {
+      text-decoration: none;
+      color: #fff; }
+      #mobileMenu li a:hover {
+        color: #16a085; }
 
 #footerImageContainer {
   text-align: center; }
