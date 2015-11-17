@@ -5839,7 +5839,8 @@ html, body {
   padding-left: 15px;
   float: left;
   background-color: #1abc9c;
-  border-radius: 3px 0 0 3px; }
+  border-radius: 3px 0 0 3px;
+  cursor: pointer; }
 
 #imageDivButtonLeft {
   background-image: url("../images/apple_logo.png"); }

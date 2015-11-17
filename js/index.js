@@ -65,7 +65,6 @@ $(document).ready(function(){
     });
     
     // input check button
-    
     $("#inputContainer input[type=\"image\"]").mouseenter(function(){
         $(this).addClass("animated rubberBand");
     });
@@ -81,4 +80,23 @@ $(document).ready(function(){
     $("#inputContainer input[type=\"image\"]").mouseup(function(){
         $(this).css("background-color", "#16a085");
     });
+    
+    
+    // store button images
+    $(".image-div-button").mouseenter(function(){
+        $(this).addClass("animated rubberBand");
+    });
+
+    $(".image-div-button").mouseleave(function(){
+        $(this).removeClass("animated rubberBand");
+    });
+    
+    $(".image-div-button").mousedown(function(){
+        $(this).css("background-color", "#5C5C5C");
+    });
+    
+    $(".image-div-button").mouseup(function(){
+        $(this).css("background-color", "#16a085");
+    });
+    
 });
