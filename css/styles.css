@@ -5897,7 +5897,7 @@ header {
 #storeButtonRow {
   margin-top: 3%; }
 
-.greenButton {
+.green-button {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
@@ -6002,7 +6002,7 @@ footer {
     text-shadow: none; }
   #section2 p {
     color: #6a6a6a; }
-  #section2 .greenButton {
+  #section2 .green-button {
     float: left; }
 
   #section3 div:first-child {
@@ -6014,7 +6014,7 @@ footer {
     text-shadow: none; }
   #section3 p {
     color: #6a6a6a; }
-  #section3 .greenButton {
+  #section3 .green-button {
     float: left; }
 
   #section4Row {
@@ -6042,9 +6042,21 @@ footer {
     top: 50%;
     transform: translateY(-50%); } }
 @media screen and (max-width: 430px) {
-  .greenButton {
+  .green-button {
     font-size: 0.75rem; } }
-/********************************** Animations ********************************/
+/********************************** Animations/Transitions ********************************/
+.green-button:hover {
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #16a085;
+  border-style: solid;
+  border-color: #16A085;
+  border-width: 2px;
+  transition-property: font-size, background-color, color, border-style, border-color, border-width;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s; }
+
 @keyframes slideAnimationIn {
   0% {
     transform: translateX(-400px); }
