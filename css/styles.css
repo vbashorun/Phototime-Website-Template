@@ -5659,6 +5659,16 @@ html, body {
   padding-left: 0px;
   padding-right: 0px; }
 
+header {
+  position: fixed;
+  width: 100%;
+  margin-top: 25px;
+  z-index: 100; }
+
+.navigation-link, #headerIcon {
+  display: none;
+  cursor: pointer; }
+
 .section {
   width: 100%;
   height: 70vh;
@@ -5676,59 +5686,55 @@ html, body {
   width: 100%;
   bottom: 5%; }
 
+#tagline {
+  width: 60%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin: 0px auto;
+  color: white; }
+  #tagline h3 {
+    font-size: 2.5rem;
+    margin: 0px;
+    word-spacing: 5px;
+    letter-spacing: 2px; }
+  #tagline h5 {
+    font-size: 1.1rem;
+    letter-spacing: 2px; }
+
 #section2 {
   background-image: url("../images/phototime_02.jpg");
   background-size: cover;
   background-position: right center; }
-  #section2 div:first-child {
-    width: 70%;
-    height: 60%;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 5; }
-  #section2 h4 {
-    font-family: "Gotham Rounded Bold";
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    color: #16a085;
-    margin-bottom: 40px;
-    text-shadow: 2px 1px 2px #4b4b4b; }
-  #section2 p {
-    font-family: 'Gotham Rounded Book';
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-    color: white;
-    margin-bottom: 40px; }
 
 #section3 {
   background-image: url("../images/phototime_03.jpg");
   background-size: cover;
   background-position: left center; }
-  #section3 div:first-child {
-    width: 70%;
-    height: 60%;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 5; }
-  #section3 h4 {
-    font-family: "Gotham Rounded Bold";
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    color: #16a085;
-    margin-bottom: 40px;
-    text-shadow: 2px 1px 2px #4b4b4b; }
-  #section3 p {
-    font-family: 'Gotham Rounded Book';
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-    color: white;
-    margin-bottom: 40px; }
+
+#section2 div:first-child, #section3 div:first-child {
+  width: 70%;
+  height: 60%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5; }
+#section2 h4, #section3 h4 {
+  font-family: "Gotham Rounded Bold";
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #16a085;
+  margin-bottom: 40px;
+  text-shadow: 2px 1px 2px #4b4b4b; }
+#section2 p, #section3 p {
+  font-family: 'Gotham Rounded Book';
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: white;
+  margin-bottom: 40px; }
 
 #section4 {
   background-color: #f5f6f7;
@@ -5801,6 +5807,8 @@ html, body {
     font-size: 1.1rem;
     letter-spacing: 2px;
     color: #6a6a6a; }
+  #section6 .input-container {
+    width: 100%; }
 
 .input-container {
   height: 50px;
@@ -5820,6 +5828,14 @@ html, body {
   color: #000;
   border: 0px;
   border-radius: 3px 0 0 3px; }
+
+.input-container input[type="image"] {
+  width: 20%;
+  height: 100%;
+  padding: 6% 7%;
+  background-color: #16a085;
+  border-radius: 0px 3px 3px 0px;
+  cursor: pointer; }
 
 .input-container label {
   position: relative;
@@ -5842,12 +5858,6 @@ html, body {
   border-radius: 3px 0 0 3px;
   cursor: pointer; }
 
-#imageDivButtonLeft {
-  background-image: url("../images/apple_logo.png"); }
-
-#imageDivButtonRight {
-  background-image: url("../images/android_logo.png"); }
-
 .image-div-button {
   width: 20%;
   height: 100%;
@@ -5858,43 +5868,11 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.input-container input[type="image"] {
-  width: 20%;
-  height: 100%;
-  padding: 6% 7%;
-  background-color: #16a085;
-  border-radius: 0px 3px 3px 0px;
-  cursor: pointer; }
+#imageDivButtonLeft {
+  background-image: url("../images/apple_logo.png"); }
 
-#section6 .input-container {
-  width: 100%; }
-
-.navigation-link, #headerIcon {
-  display: none;
-  cursor: pointer; }
-
-header {
-  position: fixed;
-  width: 100%;
-  margin-top: 25px;
-  z-index: 100; }
-
-#tagline {
-  width: 60%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  margin: 0px auto;
-  color: white; }
-  #tagline h3 {
-    font-size: 2.5rem;
-    margin: 0px;
-    word-spacing: 5px;
-    letter-spacing: 2px; }
-  #tagline h5 {
-    font-size: 1.1rem;
-    letter-spacing: 2px; }
+#imageDivButtonRight {
+  background-image: url("../images/android_logo.png"); }
 
 #storeButtonRow {
   margin-top: 3%; }
@@ -5917,6 +5895,9 @@ header {
   background-color: rgba(0, 0, 0, 0.2); }
   #menuButton img {
     width: 20px; }
+
+#mobileMenuHeader {
+  text-align: center; }
 
 #mobileMenu {
   position: fixed;
@@ -5951,21 +5932,6 @@ header {
   #footerImageContainer :nth-child(2) {
     margin: 0px 4%; }
 
-#mobileMenuHeader {
-  text-align: center; }
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(2, 2, 2, 0.7);
-  z-index: 1;
-  position: absolute;
-  top: 0%;
-  left: 0%; }
-
-.green-bar {
-  color: #16a085; }
-
 footer {
   height: 15vh;
   padding: 0px 8%; }
@@ -5978,6 +5944,18 @@ footer {
       letter-spacing: 1.5px; }
   footer img {
     display: none; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.7);
+  z-index: 1;
+  position: absolute;
+  top: 0%;
+  left: 0%; }
+
+.green-bar {
+  color: #16a085; }
 
 /********************************** Media Queries ********************************/
 @media (min-width: 768px) {
@@ -6008,28 +5986,21 @@ footer {
     font-size: 3rem; }
 
   #section2 div:first-child {
-    width: 40%;
-    text-align: left;
     margin-left: 10%;
-    left: 0%;
-    transform: translateY(-50%); }
-  #section2 h4 {
-    text-shadow: none; }
-  #section2 p {
-    color: #6a6a6a; }
-  #section2 .green-button {
-    float: left; }
+    left: 0%; }
 
   #section3 div:first-child {
+    margin-right: 10%; }
+
+  #section2 div:first-child, #section3 div:first-child {
     width: 40%;
     text-align: left;
-    margin-right: 10%;
     transform: translateY(-50%); }
-  #section3 h4 {
+  #section2 h4, #section3 h4 {
     text-shadow: none; }
-  #section3 p {
+  #section2 p, #section3 p {
     color: #6a6a6a; }
-  #section3 .green-button {
+  #section2 .green-button, #section3 .green-button {
     float: left; }
 
   #section4Row {
